@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" rx="24" fill="#E53935" />
+  <g transform="translate(50,50)">
+    <circle cx="300" cy="220" r="140" fill="#FF7043" stroke="#B71C1C" stroke-width="12" />
+    <text x="300" y="420" font-size="48" font-family="Inter, Arial" fill="#fff" text-anchor="middle">Tomato</text>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" rx="24" fill="#D84315" />
+  <g transform="translate(50,50)">
+    <path d="M260 220c20-80 120-80 140 0s-40 160-140 160S240 300 260 220z" fill="#FFAB91" stroke="#BF360C" stroke-width="10" />
+    <text x="300" y="420" font-size="48" font-family="Inter, Arial" fill="#fff" text-anchor="middle">Pepper</text>
+  </g>
+</svg>

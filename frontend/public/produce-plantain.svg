@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" rx="24" fill="#8BC34A" />
+  <g transform="translate(50,50)">
+    <rect x="220" y="180" width="260" height="120" rx="60" fill="#C5E1A5" stroke="#689F38" stroke-width="8" />
+    <text x="300" y="440" font-size="48" font-family="Inter, Arial" fill="#2E7D32" text-anchor="middle">Plantain</text>
+  </g>
+</svg>

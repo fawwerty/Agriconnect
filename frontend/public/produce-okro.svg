@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" rx="24" fill="#7CB342" />
+  <g transform="translate(50,50)">
+    <rect x="220" y="150" width="160" height="240" rx="24" fill="#AED581" stroke="#558B2F" stroke-width="10" />
+    <text x="300" y="440" font-size="48" font-family="Inter, Arial" fill="#fff" text-anchor="middle">Okro</text>
+  </g>
+</svg>

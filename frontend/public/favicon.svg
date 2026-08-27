@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="16" fill="#0b0b0d"/>
+  <g transform="translate(14 14)">
+    <path d="M18 0C8 0 0 8 0 18s8 18 18 18 18-8 18-18S28 0 18 0z" fill="#3f8e4f"/>
+    <path d="M18 0C8 0 0 8 0 18s8 18 18 18 18-8 18-18S28 0 18 0z" fill="none" stroke="#d9b19b" stroke-width="2"/>
+    <path d="M9 5c2.5-2.8 6.5-2.8 9 0" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M6 10c2.5-3 7-3 9.5 0" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M8 14c1.8-2.3 5.2-2.3 7 0" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+  <path d="M21 36c0 4 3.5 8 8 8s8-4 8-8" fill="#f9a825"/>
+  <path d="M21 36c0 4 3.5 8 8 8s8-4 8-8" fill="none" stroke="#fff" stroke-width="2"/>
+  <path d="M32 14v18" stroke="#22c55e" stroke-width="4" stroke-linecap="round"/>
+  <path d="M26 16c-2-3-1-6 1-8 2.5-2.5 6.5-2.5 9 0 2 2 3 5 1 8" stroke="#22c55e" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M28 30c0 2.5-1.5 5-4 5s-4-2.5-4-5" fill="#d53f8c"/>
+  <path d="M28 30c0 2.5-1.5 5-4 5s-4-2.5-4-5" fill="none" stroke="#fff" stroke-width="2"/>
+</svg>
