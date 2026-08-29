@@ -7,18 +7,21 @@ import { api } from '../api.js';
 
 const NAV = {
   farmer: [
+    { to: '/', label: 'Home' },
     { to: '/farmer', label: 'My Listings' },
     { to: '/farmer/orders', label: 'Orders' },
     { to: '/pools', label: 'Bulk Pools' },
     { to: '/prices', label: 'Market Prices' },
   ],
   buyer: [
+    { to: '/', label: 'Home' },
     { to: '/marketplace', label: 'Marketplace' },
     { to: '/pools', label: 'Bulk Pools' },
     { to: '/buyer/orders', label: 'My Orders' },
     { to: '/prices', label: 'Market Prices' },
   ],
   admin: [
+    { to: '/', label: 'Home' },
     { to: '/admin', label: 'Overview' },
     { to: '/admin/users', label: 'Users' },
     { to: '/admin/listings', label: 'Listings' },
@@ -63,7 +66,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handler);
   }, []);
 
-  const links = user ? NAV[user.role] || [] : [{ to: '/marketplace', label: 'Marketplace' }, { to: '/prices', label: 'Market Prices' }];
+  const links = user ? NAV[user.role] || [] : [{ to: '/', label: 'Home' }, { to: '/marketplace', label: 'Marketplace' }, { to: '/prices', label: 'Market Prices' }];
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-500 ${scrolled ? 'bg-black/95 border-white/10 shadow-glow' : 'bg-black/10 border-transparent'} backdrop-blur-2xl ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
