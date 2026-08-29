@@ -49,12 +49,6 @@ const heroImages = [
   'https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?auto=format&fit=crop&w=1600&q=80',
 ];
 
-const HIGHLIGHT_IMAGES = [
-  'https://images.unsplash.com/photo-1503389152950-2d05f3402f64?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1524592741290-975893260bd6?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1498842812179-c81beecf902c?auto=format&fit=crop&w=900&q=80',
-];
 
 export default function Landing() {
   return (
@@ -127,13 +121,6 @@ export default function Landing() {
           ))}
         </div>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-3">
-          {HIGHLIGHT_IMAGES.map((src, index) => (
-            <div key={index} className="group overflow-hidden rounded-[28px] border border-white/10 bg-white/5 shadow-[0_20px_65px_rgba(0,0,0,0.14)] transition duration-500 hover:-translate-y-1">
-              <img src={src} alt="AgriConnect highlight" loading="lazy" className="h-52 w-full object-cover transition duration-500 group-hover:scale-105" />
-            </div>
-          ))}
-        </div>
       </section>
 
       <section className="bg-surface3/80 border-t border-white/5">
