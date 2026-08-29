@@ -105,8 +105,8 @@ export default function Landing() {
 
       <section className="relative w-full overflow-hidden border-t border-white/5 py-24 px-6">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1600&q=80" alt="Fresh harvest" loading="lazy" className="h-full w-full object-cover opacity-10" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black" />
+          <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1600&q=80" alt="Fresh harvest" loading="lazy" className="h-full w-full object-cover opacity-60" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
         </div>
         <div className="relative z-10 mx-auto max-w-7xl">
           <div className="mb-14 text-center">
@@ -130,8 +130,8 @@ export default function Landing() {
 
       <section className="relative w-full overflow-hidden border-t border-white/5 py-24 px-6">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=1600&q=80" alt="Agriculture technology" loading="lazy" className="h-full w-full object-cover opacity-10" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black" />
+          <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=1600&q=80" alt="Agriculture technology" loading="lazy" className="h-full w-full object-cover opacity-60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/70" />
         </div>
         <div className="relative z-10 mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-center">
@@ -159,8 +159,8 @@ export default function Landing() {
 
       <section className="relative w-full px-6 py-32 text-center overflow-hidden border-t border-white/5">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c5c3e?auto=format&fit=crop&w=1600&q=80" alt="Farmer in field" loading="lazy" className="h-full w-full object-cover opacity-20" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black" />
+          <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c5c3e?auto=format&fit=crop&w=1600&q=80" alt="Farmer in field" loading="lazy" className="h-full w-full object-cover opacity-60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/70" />
         </div>
         <div className="relative z-10 mx-auto max-w-6xl">
           <p className="text-xs uppercase tracking-[0.32em] text-emerald mb-3">Marketplace ready</p>
