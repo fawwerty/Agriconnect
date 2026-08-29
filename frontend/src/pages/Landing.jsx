@@ -61,9 +61,9 @@ export default function Landing() {
 
         <div className="relative mx-auto flex min-h-[calc(100vh-4rem)] max-w-7xl flex-col justify-center px-6 py-20">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-3xl">
-            <span className="inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.3em] text-muted backdrop-blur-xl">
+            <p className="text-xs uppercase tracking-[0.32em] text-white mb-3">
               Premium agriculture commerce for Ghana
-            </span>
+            </p>
             <h1 className="mt-6 text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
               Connecting Ghana’s farmers to better markets.
             </h1>
