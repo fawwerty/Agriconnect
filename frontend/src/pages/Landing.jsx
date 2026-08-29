@@ -110,7 +110,7 @@ export default function Landing() {
         </div>
         <div className="relative z-10 mx-auto max-w-7xl">
           <div className="mb-14 text-center">
-            <p className="text-xs uppercase tracking-[0.32em] text-emerald mb-3">Platform highlights</p>
+            <p className="text-xs uppercase tracking-[0.32em] text-white mb-3">Platform highlights</p>
             <h2 className="section-heading text-3xl font-semibold text-white sm:text-4xl">A premium marketplace built for modern agriculture</h2>
           </div>
 
@@ -136,7 +136,7 @@ export default function Landing() {
         <div className="relative z-10 mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-center">
             <div>
-              <p className="text-xs uppercase tracking-[0.32em] text-emerald mb-3">How it works</p>
+              <p className="text-xs uppercase tracking-[0.32em] text-white mb-3">How it works</p>
               <h2 className="section-heading text-3xl font-semibold text-white sm:text-4xl">From planting to payout, every step is designed for clarity.</h2>
               <p className="mt-5 text-base leading-8 text-white/80 max-w-2xl">The AgriConnect workflow brings listing, ordering, transport booking, payments and performance insights into one premium experience.</p>
             </div>
@@ -163,7 +163,7 @@ export default function Landing() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/60" />
         </div>
         <div className="relative z-10 mx-auto max-w-6xl">
-          <p className="text-xs uppercase tracking-[0.32em] text-emerald mb-3">Marketplace ready</p>
+          <p className="text-xs uppercase tracking-[0.32em] text-white mb-3">Marketplace ready</p>
           <h2 className="section-heading text-3xl font-semibold text-white sm:text-4xl">Launch your first listing in minutes.</h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-white/80">Whether you are a farmer, buyer or transporter, the interface keeps every action easy and elegant.</p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">

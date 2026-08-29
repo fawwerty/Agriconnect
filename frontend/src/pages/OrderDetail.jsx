@@ -539,7 +539,7 @@ export default function OrderDetail() {
             {payStep === 1 && (
               <>
                 <div className="mb-6">
-                  <p className="text-xs uppercase tracking-[0.3em] text-emerald mb-2">Secure Escrow Checkout</p>
+                  <p className="text-xs uppercase tracking-[0.32em] text-white mb-2">Secure Escrow Checkout</p>
                   <h2 className="text-2xl font-semibold text-white font-display">Choose payment channel</h2>
                   <p className="text-sm text-muted mt-1">Funds are secured in AgriConnect Escrow and only released when you confirm produce receipt.</p>
                 </div>
@@ -572,7 +572,7 @@ export default function OrderDetail() {
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-2xl">{selectedMethod.badge}</span>
                     <div>
-                      <p className="text-xs uppercase tracking-[0.3em] text-emerald">Selected Channel</p>
+                      <p className="text-xs uppercase tracking-[0.32em] text-white">Selected Channel</p>
                       <p className="text-xl font-semibold text-white">{selectedMethod.label}</p>
                     </div>
                   </div>

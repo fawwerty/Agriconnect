@@ -60,7 +60,7 @@ export default function Orders() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 space-y-8">
       <div className="space-y-3">
-        <p className="text-xs font-semibold uppercase tracking-[0.32em] text-emerald">Order Management</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.32em] text-white">Order Management</p>
         <h1 className="font-display text-4xl text-ink">{user.role === 'farmer' ? 'Orders on My Produce' : 'My Orders'}</h1>
         <p className="text-muted text-sm max-w-xl">Track the full order lifecycle — from placement through payment, fulfillment, and delivery confirmation.</p>
       </div>

@@ -139,7 +139,7 @@ export default function Marketplace() {
       {/* Header Section */}
       <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div className="max-w-2xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.32em] text-emerald mb-3">The Marketplace</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.32em] text-white mb-3">The Marketplace</p>
           <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4 font-display">
             Premium produce, direct from farms.
           </h1>
@@ -448,7 +448,7 @@ export default function Marketplace() {
               {/* Info Side */}
               <div className="md:w-1/2 p-8 md:p-10 flex flex-col overflow-y-auto">
                 <div className="flex justify-between items-start hidden md:flex mb-2">
-                  <span className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald">{quickView.category}</span>
+                  <span className="text-xs font-semibold uppercase tracking-[0.32em] text-white">{quickView.category}</span>
                   <button onClick={() => setQuickView(null)} className="text-muted hover:text-white transition">
                     <X size={24} />
                   </button>

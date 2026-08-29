@@ -102,7 +102,7 @@ export default function BulkPools() {
 
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.32em] text-emerald mb-3">Cooperative Commerce</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.32em] text-white mb-3">Cooperative Commerce</p>
           <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-white font-display">
             Bulk Buying & Harvest Pools
           </h1>

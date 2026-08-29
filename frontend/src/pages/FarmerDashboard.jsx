@@ -146,7 +146,7 @@ export default function FarmerDashboard() {
       {/* Header */}
       <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
         <div>
-          <p className="text-xs uppercase tracking-[0.32em] text-emerald mb-2">Farmer Enterprise Hub</p>
+          <p className="text-xs uppercase tracking-[0.32em] text-white mb-2">Farmer Enterprise Hub</p>
           <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-white font-display">
             Harvest & Wallet Command Center
           </h1>
@@ -337,7 +337,7 @@ export default function FarmerDashboard() {
           <div className="glass-card w-full max-w-2xl rounded-[32px] p-8 border border-white/10 shadow-2xl max-h-[90vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
             <div className="mb-6 flex items-center justify-between gap-4">
               <div>
-                <p className="text-xs uppercase tracking-[0.32em] text-emerald mb-1">{editing ? 'Edit listing' : 'New harvest'}</p>
+                <p className="text-xs uppercase tracking-[0.32em] text-white mb-1">{editing ? 'Edit listing' : 'New harvest'}</p>
                 <h2 className="text-3xl font-semibold text-white font-display">{editing ? 'Update produce details' : 'Publish a new harvest listing'}</h2>
               </div>
               <Button variant="ghost" onClick={() => setShowForm(false)}>Close</Button>

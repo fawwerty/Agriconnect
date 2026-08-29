@@ -6,7 +6,7 @@ export default function Privacy() {
   return (
     <div className="mx-auto max-w-5xl px-6 py-16">
       <div className="glass-card rounded-[32px] border border-white/10 bg-surface3/80 p-10 shadow-[0_30px_90px_rgba(0,0,0,0.18)]">
-        <p className="text-xs uppercase tracking-[0.32em] text-emerald mb-3">Privacy policy</p>
+        <p className="text-xs uppercase tracking-[0.32em] text-white mb-3">Privacy policy</p>
         <h1 className="text-4xl font-semibold text-white mb-6">Protecting your data and trust.</h1>
         <p className="text-base leading-8 text-muted mb-6">We collect and store only the information needed to connect farmers, buyers, and transport partners safely. Your profile, order activity, and communication data are used to improve experience and keep every trade secure.</p>
         <div className="space-y-4 text-sm text-muted leading-7">

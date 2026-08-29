@@ -81,7 +81,7 @@ export default function CartPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-12">
       <div className="mb-10">
-        <p className="text-xs font-semibold uppercase tracking-[0.32em] text-emerald mb-3">Checkout</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.32em] text-white mb-3">Checkout</p>
         <h1 className="text-4xl font-semibold tracking-tight text-white font-display mb-8">
           {step === 'cart' ? 'Your Cart' : step === 'checkout' ? 'Secure Checkout' : 'Order Confirmed'}
         </h1>

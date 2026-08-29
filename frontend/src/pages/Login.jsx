@@ -40,7 +40,7 @@ export default function Login() {
       <div className="relative z-10 mx-auto flex h-full min-h-[85vh] max-w-6xl flex-col justify-center px-6 py-10">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
           <div className="space-y-6">
-            <p className="text-xs uppercase tracking-[0.32em] text-emerald">Secure access</p>
+            <p className="text-xs uppercase tracking-[0.32em] text-white">Secure access</p>
             <h1 className="text-5xl font-semibold tracking-tight text-white">Welcome back to AgriConnect.</h1>
             <p className="max-w-2xl text-base leading-8 text-muted">Sign in and continue managing listings, orders, transport and real-time market insights from one premium dashboard.</p>
           </div>

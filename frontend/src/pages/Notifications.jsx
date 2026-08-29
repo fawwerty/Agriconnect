@@ -35,7 +35,7 @@ export default function Notifications() {
     <div className="dashboard-page-bg mx-auto max-w-7xl px-6 py-10">
       <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="text-xs uppercase tracking-[0.32em] text-emerald mb-3">Notifications</p>
+          <p className="text-xs uppercase tracking-[0.32em] text-white mb-3">Notifications</p>
           <h1 className="text-4xl font-semibold text-white">Platform activity and alerts</h1>
           <p className="mt-3 max-w-2xl text-sm leading-7 text-muted">Review your latest order updates, market alerts, and platform messages in one place.</p>
         </div>

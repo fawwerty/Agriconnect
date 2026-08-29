@@ -32,7 +32,7 @@ export default function AdminOverview() {
     <div className="dashboard-page-bg relative mx-auto max-w-7xl px-6 py-10 space-y-10">
       <div className="rounded-[32px] border border-white/10 bg-surface3/80 p-10 shadow-[0_30px_90px_rgba(0,0,0,0.18)] backdrop-blur-xl">
         <div className="mb-8">
-          <p className="text-xs uppercase tracking-[0.3em] text-emerald mb-3">Admin console</p>
+          <p className="text-xs uppercase tracking-[0.32em] text-white mb-3">Admin console</p>
           <h1 className="text-4xl font-semibold text-white">A premium command center for AgriConnect leaders.</h1>
           <p className="mt-4 max-w-2xl text-base leading-8 text-muted">Review top-level health, manage listings, and monitor platform flows from one polished dashboard.</p>
         </div>
