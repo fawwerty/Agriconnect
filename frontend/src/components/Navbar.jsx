@@ -32,6 +32,8 @@ export default function Navbar() {
   const { cartCount } = useCart();
   const [count, setCount] = useState(0);
   const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const lastScrollY = React.useRef(0);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -45,16 +47,26 @@ export default function Navbar() {
   }, [token, location.pathname]);
 
   useEffect(() => {
-    const handler = () => setScrolled(window.scrollY > 20);
+    const handler = () => {
+      const currentY = window.scrollY;
+      setScrolled(currentY > 20);
+      // Hide when scrolling down past 80px, show when scrolling up
+      if (currentY > 80) {
+        setVisible(currentY < lastScrollY.current);
+      } else {
+        setVisible(true);
+      }
+      lastScrollY.current = currentY;
+    };
     handler();
-    window.addEventListener('scroll', handler);
+    window.addEventListener('scroll', handler, { passive: true });
     return () => window.removeEventListener('scroll', handler);
   }, []);
 
   const links = user ? NAV[user.role] || [] : [{ to: '/marketplace', label: 'Marketplace' }, { to: '/prices', label: 'Market Prices' }];
 
   return (
-    <header className={`sticky top-0 z-50 border-b transition-all duration-500 ${scrolled ? 'bg-black/95 border-white/10 shadow-glow' : 'bg-black/10 border-transparent'} backdrop-blur-2xl`}> 
+    <header className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-500 ${scrolled ? 'bg-black/95 border-white/10 shadow-glow' : 'bg-black/10 border-transparent'} backdrop-blur-2xl ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3.5">
         <Link to="/" className="flex items-center gap-3">
           <span className="inline-flex h-11 w-11 items-center justify-center rounded-3xl bg-white/5 border border-white/10 text-sm font-semibold tracking-tight text-emerald shadow-glow">

@@ -27,6 +27,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-canvas text-ink">
       <Navbar />
+      <div className="pt-16">
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
@@ -56,6 +57,7 @@ export default function App() {
 
         <Route path="*" element={<Landing />} />
       </Routes>
+      </div>
     </div>
   );
 }
