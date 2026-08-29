@@ -306,10 +306,9 @@ export default function Marketplace() {
                     className="glass-card flex flex-col rounded-[32px] overflow-hidden border border-white/10 shadow-[0_18px_70px_rgba(0,0,0,0.2)] group cursor-pointer"
                     onClick={() => setQuickView(l)}
                   >
-                    {/* Image Box */}
                     <div className="relative h-56 overflow-hidden bg-gradient-to-br from-white/5 to-transparent">
                       <img 
-                        src={l.image_url || IMAGES[l.crop_name] || '/produce-fallback.svg'} 
+                        src={l.image_url ? (l.image_url.startsWith('/uploads') ? `http://localhost:4000${l.image_url}` : l.image_url) : IMAGES[l.crop_name] || '/produce-fallback.svg'} 
                         alt={l.crop_name} 
                         loading="lazy" 
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" 
@@ -426,10 +425,9 @@ export default function Marketplace() {
               className="glass-card w-full max-w-4xl rounded-[40px] overflow-hidden shadow-2xl flex flex-col md:flex-row max-h-[90vh]"
               onClick={e => e.stopPropagation()}
             >
-              {/* Image Side */}
-              <div className="md:w-1/2 relative bg-white/5 h-64 md:h-auto">
+                <div className="md:w-1/2 relative bg-white/5 h-64 md:h-auto">
                 <img 
-                  src={quickView.image_url || IMAGES[quickView.crop_name] || '/produce-fallback.svg'} 
+                  src={quickView.image_url ? (quickView.image_url.startsWith('/uploads') ? `http://localhost:4000${quickView.image_url}` : quickView.image_url) : IMAGES[quickView.crop_name] || '/produce-fallback.svg'} 
                   alt={quickView.crop_name} 
                   className="w-full h-full object-cover"
                 />

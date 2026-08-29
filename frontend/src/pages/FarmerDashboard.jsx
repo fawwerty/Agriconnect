@@ -413,7 +413,7 @@ export default function FarmerDashboard() {
                 <input type="file" accept="image/*" onChange={handleImageChange} className="block w-full text-sm text-muted file:mr-4 file:rounded-full file:border-0 file:bg-emerald file:px-4 file:py-2 file:text-sm file:font-semibold file:text-slate-900" />
                 {(imagePreview || editing?.image_url) && (
                   <img
-                    src={imagePreview || editing.image_url}
+                    src={imagePreview || (editing.image_url.startsWith('/uploads') ? `http://localhost:4000${editing.image_url}` : editing.image_url)}
                     alt="Product preview"
                     className="mt-3 h-32 w-full rounded-2xl object-cover border border-white/10"
                   />

@@ -29,8 +29,8 @@ if exist "C:\xampp\htdocs" (
     echo  ============================================================
     echo   AgriConnect is now running!
     echo.
-    echo   ^> API (backend):   http://localhost:4000/api/health
-    echo   ^> Web app (XAMPP): http://localhost/agriconnect/
+    echo   ^> API [backend]:   http://localhost:4000/api/health
+    echo   ^> Web app [XAMPP]: http://localhost/agriconnect/
     echo  ============================================================
     echo.
     explorer "http://localhost/agriconnect/"
@@ -40,10 +40,10 @@ if exist "C:\xampp\htdocs" (
     echo      Opening Vite dev server instead...
     echo.
     echo  ============================================================
-    echo   AgriConnect is now running (dev mode)!
+    echo   AgriConnect is now running [dev mode]!
     echo.
-    echo   ^> API (backend):   http://localhost:4000/api/health
-    echo   ^> Web app (Vite):  http://localhost:5173
+    echo   ^> API [backend]:   http://localhost:4000/api/health
+    echo   ^> Web app [Vite]:  http://localhost:5173
     echo  ============================================================
     echo.
     start "AgriConnect Frontend" cmd /k "npm run dev"

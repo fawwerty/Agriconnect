@@ -7,8 +7,38 @@ A working full-stack prototype of the AgriConnect Ghana marketplace, built to de
 This prototype has been specifically adapted to meet the **CS410 Entrepreneurship in Computing** course requirements:
 
 1. **Local Ghanaian Payments**: We replaced the proposed USSD/Africa's Talking integration (which requires live cloud APIs) with a **fully local simulated payment flow**. Buyers can pay via **MTN Mobile Money, Telecel Cash, AirtelTigo Money, GhIPSS Instant Pay, or Cash on Delivery** directly in the app.
-2. **XAMPP Hosting Support**: The frontend is built to be served directly from XAMPP's Apache `htdocs` directory, ensuring it runs locally without needing a cloud hosting environment.
-3. **Hybrid Architecture**: While the proposal mentioned PHP/Laravel, this MVP uses a modern Node.js/Express backend paired with a React frontend. The backend runs as an API on `localhost:4000`, while XAMPP serves the frontend on port 80. A one-click `start.bat` script makes demoing seamless.
+2. **XAMPP Hosting Support (All Files in XAMPP)**: The entire system (both frontend and backend) can be placed directly inside XAMPP's `htdocs` directory to ensure all components are housed together locally, rather than being scattered.
+3. **Hybrid Architecture**: This MVP uses a modern Node.js/Express backend paired with a React frontend. The backend runs as an API on `localhost:4000`, while XAMPP serves the frontend on port 80. A one-click `start.bat` script makes launching the entire system from XAMPP seamless.
+
+---
+
+## 🏃 How to Launch the System from XAMPP
+
+To confirm and ensure **all files** (not just a few built components) are inside XAMPP, please follow these exact steps to launch the system:
+
+### Step 1: Move the entire project to XAMPP
+Copy or move this entire **`agriconnect`** folder (containing `frontend`, `backend`, `README.md`, etc.) into your XAMPP `htdocs` directory.
+Your path should look exactly like this:
+👉 `C:\xampp\htdocs\agriconnect`
+
+### Step 2: Start Apache in XAMPP
+1. Open your **XAMPP Control Panel**.
+2. Click the **Start** button next to **Apache**.
+*(Make sure the text highlights green, meaning Apache is running on Port 80).*
+
+### Step 3: Launch the System
+1. Open the folder where you just moved the files: `C:\xampp\htdocs\agriconnect`
+2. Double-click the **`start.bat`** file.
+
+**What `start.bat` does automatically:**
+- It starts the Node.js API backend (opening a command prompt window).
+- It builds the React frontend.
+- It copies the built frontend files (`index.html`, etc.) into the root of `htdocs\agriconnect` so Apache can serve them.
+- It opens your web browser automatically to `http://localhost/agriconnect/`.
+
+*Note: Leave the black command prompt window open while you demo, as that is the backend server running.*
+
+---
 
 ## 🏗️ Tech Stack
 
@@ -16,36 +46,24 @@ This prototype has been specifically adapted to meet the **CS410 Entrepreneurshi
 - **Frontend:** React 18 + Vite + Tailwind CSS + Recharts
 - **Key Features:** Registration/login by role, produce listings (CRUD), marketplace search & ordering, a 6-state escrow-style order workflow, transport booking, per-order chat, notifications, market price history with charts, and an admin dashboard with live analytics.
 
-## 📁 Project Structure
+## 📁 Project Structure (Inside XAMPP)
 
 ```text
-agriconnect/
+C:\xampp\htdocs\agriconnect\
 ├── backend/          Express API + SQLite database
-│   ├── db.js          Schema + seed data (runs automatically on first start)
+│   ├── db.js          Schema + seed data
 │   ├── server.js      Entry point
-│   ├── routes/        auth, listings, orders, transport, market-prices, messages, etc.
+│   ├── routes/        API Routes
 │   └── middleware/    auth.js
 ├── frontend/         React + Vite app
-│   └── src/
-│       ├── pages/       Landing, Login, Register, Dashboards, Marketplace, Order Detail
-│       └── components/  Shared UI components
-├── XAMPP_SETUP.md    Detailed guide for hosting on XAMPP for the presentation
-└── start.bat         One-click launcher for the demo
+│   └── src/           React Source Code
+├── start.bat         One-click launcher for the demo
+└── index.html        (Generated automatically by start.bat for XAMPP to serve)
 ```
 
-## 🏃 Running the Demo
+---
 
-For detailed instructions on running this project via XAMPP for your presentation, please refer to the **[XAMPP_SETUP.md](./XAMPP_SETUP.md)** file.
-
-### Quick Start (One-Click)
-
-If you have Node.js and XAMPP installed (at `C:\xampp`), you can simply double-click the **`start.bat`** file in the root folder. It will:
-1. Start the Node.js backend API.
-2. Build the React frontend.
-3. Deploy the frontend to `C:\xampp\htdocs\agriconnect`.
-4. Open your browser to the local site.
-
-### Demo Accounts (Password: `password123`)
+## 🔑 Demo Accounts (Password: `password123`)
 
 | Role    | Email                  | Notes |
 |---------|-------------------------|-------|
@@ -56,10 +74,12 @@ If you have Node.js and XAMPP installed (at `C:\xampp`), you can simply double-c
 | Transp. | `nana@transport.gh`      | Pickup Truck operator |
 | Admin   | `admin@agriconnect.gh`   | Dashboard overview |
 
-*The login page also has quick-fill buttons for these accounts.*
+*The login page also has quick-fill buttons for these accounts so you don't have to type them manually during the demo.*
 
 ### Resetting Data
-To reset the database, stop the backend server and delete all `agriconnect.sqlite*` files in the `backend/` folder. The database will re-seed itself with fresh data on the next startup.
+To reset the database, stop the backend server (close the command prompt) and delete all `agriconnect.sqlite*` files in the `backend/` folder. The database will re-seed itself with fresh data on the next startup.
+
+---
 
 ## 🔄 Core Demo Flow
 
@@ -70,3 +90,4 @@ To reset the database, stop the backend server and delete all `agriconnect.sqlit
 5. Log in as **Kwame** → Mark the order as fulfilled/dispatched.
 6. Log in as **Efua** → Confirm receipt of produce → Escrow payment is "released".
 7. Log in as **Admin** → View the dashboard to see platform analytics and order payment methods.
+
