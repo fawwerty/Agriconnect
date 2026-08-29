@@ -103,42 +103,51 @@ export default function Landing() {
 
       <HarvestTicker />
 
-      <section className="page-section mx-auto max-w-7xl px-6 py-24">
-        <div className="mb-14 text-center">
-          <p className="text-xs uppercase tracking-[0.32em] text-emerald mb-3">Platform highlights</p>
-          <h2 className="section-heading text-3xl font-semibold text-white sm:text-4xl">A premium marketplace built for modern agriculture</h2>
+      <section className="relative w-full overflow-hidden border-t border-white/5 py-24 px-6">
+        <div className="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1600&q=80" alt="Fresh harvest" loading="lazy" className="h-full w-full object-cover opacity-10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black" />
         </div>
+        <div className="relative z-10 mx-auto max-w-7xl">
+          <div className="mb-14 text-center">
+            <p className="text-xs uppercase tracking-[0.32em] text-emerald mb-3">Platform highlights</p>
+            <h2 className="section-heading text-3xl font-semibold text-white sm:text-4xl">A premium marketplace built for modern agriculture</h2>
+          </div>
 
-        <div className="grid gap-6 lg:grid-cols-4">
-          {FEATURES.map(feature => (
-            <motion.div key={feature.title} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="glass-card rounded-[32px] p-6">
-              <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-3xl bg-white/10 text-emerald shadow-[0_16px_40px_rgba(34,197,94,0.15)]">
-                {feature.icon}
-              </div>
-              <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
-              <p className="text-sm leading-7 text-muted">{feature.body}</p>
-            </motion.div>
-          ))}
+          <div className="grid gap-6 lg:grid-cols-4">
+            {FEATURES.map(feature => (
+              <motion.div key={feature.title} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="glass-card rounded-[32px] p-6 bg-black/40 backdrop-blur-md">
+                <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-3xl bg-white/10 text-emerald shadow-[0_16px_40px_rgba(34,197,94,0.15)]">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
+                <p className="text-sm leading-7 text-white/70">{feature.body}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
-
       </section>
 
-      <section className="bg-surface3/80 border-t border-white/5">
-        <div className="mx-auto max-w-7xl px-6 py-24">
+      <section className="relative w-full overflow-hidden border-t border-white/5 py-24 px-6">
+        <div className="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=1600&q=80" alt="Agriculture technology" loading="lazy" className="h-full w-full object-cover opacity-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black" />
+        </div>
+        <div className="relative z-10 mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-center">
             <div>
               <p className="text-xs uppercase tracking-[0.32em] text-emerald mb-3">How it works</p>
               <h2 className="section-heading text-3xl font-semibold text-white sm:text-4xl">From planting to payout, every step is designed for clarity.</h2>
-              <p className="mt-5 text-base leading-8 text-muted max-w-2xl">The AgriConnect workflow brings listing, ordering, transport booking, payments and performance insights into one premium experience.</p>
+              <p className="mt-5 text-base leading-8 text-white/80 max-w-2xl">The AgriConnect workflow brings listing, ordering, transport booking, payments and performance insights into one premium experience.</p>
             </div>
             <div className="grid gap-4">
               {STEPS.map(step => (
-                <motion.div key={step.n} className="glass-card rounded-[32px] p-6" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
+                <motion.div key={step.n} className="glass-card rounded-[32px] p-6 bg-black/40 backdrop-blur-md" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
                   <div className="flex items-center justify-between gap-4">
                     <span className="inline-flex h-12 w-12 items-center justify-center rounded-3xl bg-emerald text-black font-semibold">{step.n}</span>
                     <div>
                       <h3 className="text-lg font-semibold text-white">{step.title}</h3>
-                      <p className="mt-2 text-sm text-muted leading-7">{step.body}</p>
+                      <p className="mt-2 text-sm text-white/70 leading-7">{step.body}</p>
                     </div>
                   </div>
                 </motion.div>
