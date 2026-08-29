@@ -148,13 +148,19 @@ export default function Landing() {
         </div>
       </section>
 
-      <section className="page-section mx-auto max-w-6xl px-6 py-24 text-center">
-        <p className="text-xs uppercase tracking-[0.32em] text-emerald mb-3">Marketplace ready</p>
-        <h2 className="section-heading text-3xl font-semibold text-white sm:text-4xl">Launch your first listing in minutes.</h2>
-        <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-muted">Whether you are a farmer, buyer or transporter, the interface keeps every action easy and elegant.</p>
-        <div className="mt-10 flex flex-wrap justify-center gap-4">
-          <Button as={Link} to="/register" variant="primary" className="btn-float">Get started</Button>
-          <Button as={Link} to="/login" variant="secondary" className="btn-float">Sign in</Button>
+      <section className="relative w-full px-6 py-32 text-center overflow-hidden border-t border-white/5">
+        <div className="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c5c3e?auto=format&fit=crop&w=1600&q=80" alt="Farmer in field" loading="lazy" className="h-full w-full object-cover opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black" />
+        </div>
+        <div className="relative z-10 mx-auto max-w-6xl">
+          <p className="text-xs uppercase tracking-[0.32em] text-emerald mb-3">Marketplace ready</p>
+          <h2 className="section-heading text-3xl font-semibold text-white sm:text-4xl">Launch your first listing in minutes.</h2>
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-white/80">Whether you are a farmer, buyer or transporter, the interface keeps every action easy and elegant.</p>
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
+            <Button as={Link} to="/register" variant="primary" className="btn-float">Get started</Button>
+            <Button as={Link} to="/login" variant="secondary" className="btn-float">Sign in</Button>
+          </div>
         </div>
       </section>
 
