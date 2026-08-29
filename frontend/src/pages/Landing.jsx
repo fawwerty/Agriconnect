@@ -159,8 +159,8 @@ export default function Landing() {
 
       <section className="relative w-full px-6 py-32 text-center overflow-hidden border-t border-white/5">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c5c3e?auto=format&fit=crop&w=1600&q=80" alt="Farmer in field" loading="lazy" className="h-full w-full object-cover opacity-60" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/70" />
+          <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80" alt="Farmer in field" className="h-full w-full object-cover opacity-70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/60" />
         </div>
         <div className="relative z-10 mx-auto max-w-6xl">
           <p className="text-xs uppercase tracking-[0.32em] text-emerald mb-3">Marketplace ready</p>
