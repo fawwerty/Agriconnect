@@ -34,13 +34,19 @@ export default function Register() {
   }
 
   return (
-    <div className="mx-auto flex min-h-[85vh] max-w-6xl flex-col justify-center px-6 py-10">
-      <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
-        <div className="space-y-6">
-          <div className="inline-flex items-center gap-3 rounded-full bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.3em] text-emerald">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-2xl bg-white/10 text-emerald">🌾</span>
-            Farmer-first registration
-          </div>
+    <div className="relative overflow-hidden min-h-[calc(100vh-4rem)]">
+      <div className="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?auto=format&fit=crop&w=1600&q=80" alt="AgriConnect background" className="h-full w-full object-cover opacity-30" />
+        <div className="hero-overlay" />
+      </div>
+
+      <div className="relative z-10 mx-auto flex h-full min-h-[85vh] max-w-6xl flex-col justify-center px-6 py-10">
+        <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
+          <div className="space-y-6">
+            <div className="inline-flex items-center gap-3 rounded-full bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.3em] text-emerald">
+              <span className="inline-flex h-8 w-8 items-center justify-center rounded-2xl bg-white/10 text-emerald">🌾</span>
+              Farmer-first registration
+            </div>
           <h1 className="text-5xl font-semibold tracking-tight text-white">Create your AgriConnect profile.</h1>
           <p className="max-w-2xl text-base leading-8 text-muted">Choose your role and get access to premium trade workflows, escrow protection, and regional marketplace exposure.</p>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -113,6 +119,7 @@ export default function Register() {
           <p className="mt-6 text-center text-sm text-muted">Already have an account? <Link to="/login" className="text-emerald hover:underline">Log in</Link></p>
         </div>
       </div>
+    </div>
     </div>
   );
 }
